@@ -1,0 +1,10 @@
+Writen Exercises
+1. Explain why do we want sometimes to use setImmediate instead of using setTimeout?
+- setTimeout calling function after delay time, it's not executed immidiately but queue after all the executing  and currently queue
+while setImmediate check the queue and queue immidiately after the last I/O
+
+2. Explain the difference betwwen process.nextTick and setImmediate?
+- process.Tick() fire immidiately on the same phase event, while setImmediate fire on the following iteration or 'tick; of the event loop
+
+3. Name 10 core modules that Node provides by default
+- http, https, url, querystring, path, fs, util, v8, zlib, buffer
